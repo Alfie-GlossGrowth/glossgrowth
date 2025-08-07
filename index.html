@@ -21,14 +21,7 @@
 
   if (isMobile) {
     alert("Welcome! You're viewing this site on a mobile device.");
-    document.body.innerHTML = `
-      <div class="mobile-block">
-        Sorry, this site isn’t available on mobile.<br>
-        Please visit on a desktop device.<br>
-	Or email alfie@glossgrowth.com for more info
-      </div>
-    `;
-    document.body.style.background = "#fff";
+    window.close();
   }
 </script>
 <script>
