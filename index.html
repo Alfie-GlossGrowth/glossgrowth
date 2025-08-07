@@ -37,6 +37,7 @@
   const isMobile = /iPhone|iPad|iPod|Android|webOS|BlackBerry|Windows Phone/i.test(navigator.userAgent);
 
   if (isMobile) {
+    alert("Welcome! You're viewing this site on a mobile device.");
     document.body.innerHTML = `
       <div class="mobile-block">
         Sorry, this site isn’t available on mobile.<br>
