@@ -14,6 +14,14 @@
 <script nomodule="" src="https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js"></script>
 <!-- Performance API Polyfills -->
 <script>
+  // Basic mobile detection
+  const isMobile = /iPhone|iPad|iPod|Android|webOS|BlackBerry|Windows Phone/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    alert("Welcome! You're viewing this site on a mobile device.");
+  }
+</script>
+<script>
   (function () {
     var noop = function noop() {};
     if ("performance" in window === false) {
