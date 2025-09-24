@@ -10,13 +10,21 @@
         <meta name="keywords" content="car detailing leads, auto detailing marketing, Facebook ads for detailers, GlossGrowth agency">
         <meta name="author" content="GlossGrowth">
         <meta property="og:title" content="GlossGrowth - Polish your Marketing">
-        <meta property="og:description" content="Simplifying Growth by Generating High-quality Leads for Detailers.">
-        
+        <meta property="og:description" content="Simplifying Growth  by Generating High-quality Leads for Detailers.">
+
         <meta property="og:image" content="https://yourwebsite.com/path-to-preview-image.jpg">
-        
+
         <meta property="og:url" content="https://www.glossgrowth.com">
         <meta property="og:type" content="website">
         <style>
+            html {
+                font-size: 16px;
+            }
+            @media (max-width:600px) {
+                html {
+                    font-size: 11px;
+                }
+            }
             body {
                 margin:0;
                 padding: 0;
@@ -41,7 +49,7 @@
             .gateway {
                 margin: 0;
                 padding: 0;
-                height: 600px;
+                height: 75vh;
                 background-color: #ffffff;
                 background-image: url('/carMan.avif');
                 background-size: cover;
@@ -52,7 +60,7 @@
                 align-items: center;
                 text-align: center;
                 font-family: 'Trebuchet MS', sans-serif;
-                font-size: 40px;
+                font-size: 2.5rem;
                 color: #ffffff;
             }
             #offerBLUE {
@@ -64,16 +72,17 @@
                 justify-content: center;
                 align-items: center;
                 text-align: center;   
-                padding-top: 30px;
-                padding-bottom:60px;
+                padding-top: 2vh;
+                padding-bottom:7vh;
                 line-height: 1.8;
                 background-color: #f2f2f2;
             }
             .whoAreWe h1 {
-                font-size: 45px;
+                font-size: 2.5rem;
             }
             .whoAreWe p {
-                font-size: 18px;
+                font-size: 1.1rem;
+                width:70vw;
             }
             .ourProcess {
                 display: flex;
@@ -82,14 +91,14 @@
                 align-items: center;
                 text-align: center;
                 background-color: #ffffff;
-                padding: 7px;
-                font-size: 22px;
+                padding: 1vh;
+                font-size: 1.4rem;
             }
             .process {
                 background-image: url('/coolBackground.avif');
                 margin: 0;
-                padding: 0;
-                height: 600px;
+                padding: 40px 0; /* add some breathing space */
+                min-height: 60vh; /* ensures it’s tall enough on desktop */
                 background-size: cover;
                 background-position: center;
                 display: flex;
@@ -117,16 +126,6 @@
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: center;
-            }
-            @media (max-width: 900px) {
-                .process-row {
-                    flex-direction: column;
-                    align-items: center;
-                    gap: 40px;
-                }
-                .process-box {
-                    max-width: 90%;
-                }
             }
             .process-box h2 {
                 margin-top: 15px;
@@ -158,57 +157,43 @@
             .footer {
                 margin: 0;
                 padding: 0;
-                height: 80%;
                 background-color: #ffffff;
                 background-size: cover;
                 background-position: center;
                 display: flex;
                 justify-content: left;
-                align-items: center;
+                align-items: stretch;
                 text-align: center;
+                flex-wrap: wrap;
             }
             .more {
                 margin: 0;
-                padding: 0;
+                padding: 20px;
+                padding-left: 0;
                 background-color: #000000;
-                width:33%;
-                height: 100%;
-                background-size: cover;
-                background-position: center;
+                flex: 1 1 20vw; /* flexible, min width 300px */
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                font-size: 40px;
+                font-size: 1rem;
                 color: #ffffff;
             }
-            .more h1 {
-                font-size: 30px;
-                top:-10%;
-            }
-            .more p {
-                font-size: 15px;
-                line-height: 1.6;
-                top:-10%;
-            }
-            #gg {
-                line-height: 1.1;
-                font-size: 10px;
-            }
             .form {
-                width: 67%;
-                height: 100%;
+                flex: 2 1 60vh; /* flexible, min width 300px */
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                padding-top: 10vh;
+                padding-bottom: 6vh;
             }
             .contact-form {
                 display: flex;
                 flex-direction: column;
-                gap: 12px;
+                gap: 3px;
                 width: 80%;
-                max-width: 600px;
+                max-width: 60vw;
                 font-size: 16px;
             }
             .contact-form label {
@@ -231,13 +216,44 @@
                 font-size: 16px;
                 font-weight: bold;
                 cursor: pointer;
-                transition: background 0.3s ease;
             }
             .contact-form button:hover {
                 background-color: #7aa6db;
             }
             .form input {
                 margin-bottom:10px;
+            }
+            @media (max-width: 800px) {
+                .more, .form {
+                    width: 100%;
+                }
+                .process-row {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 40px;
+                }
+                .process-box {
+                    max-width: 90%;
+                }
+                .form {
+                    padding-top: 2vh;
+                    padding-bottom: 0vh;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .form {
+                    order: 1;
+                    width: 100%;
+                }
+                .more {
+                    order: 2;
+                    width: 100%;
+                    padding-bottom: 2vh;
+                }
+                .contact-form {
+                    padding-top:7vw;
+                    padding-bottom:7vw;
+                }
             }
         </style>
     </head>
@@ -319,12 +335,10 @@
 
             document.getElementById('form').addEventListener('submit', function (e) {
                 e.preventDefault();
-
                 const fullName = document.getElementById('fullname')?.value || '';
                 const email = document.getElementById('email')?.value || '';
                 const phone = document.getElementById('phone')?.value || '';
                 const url = document.getElementById('website')?.value || '';
-
                 const payload = {
                     content: `📥 **New Website Submission**
                     **Name:** ${fullName}
@@ -333,7 +347,6 @@
                     **Website URL:** ${url}`,
                     username: 'Website Form',
                 };
-
                 fetch(WEBHOOK_URL, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
