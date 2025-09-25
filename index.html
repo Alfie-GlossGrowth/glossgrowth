@@ -97,8 +97,8 @@
             .process {
                 background-image: url('/coolBackground.avif');
                 margin: 0;
-                padding: 40px 0; /* add some breathing space */
-                min-height: 60vh; /* ensures it’s tall enough on desktop */
+                padding: 40px 0;
+                min-height: 60vh;
                 background-size: cover;
                 background-position: center;
                 display: flex;
@@ -170,8 +170,9 @@
                 margin: 0;
                 padding: 20px;
                 padding-left: 0;
+                padding-right: 0;
                 background-color: #000000;
-                flex: 1 1 20vw; /* flexible, min width 300px */
+                flex: 1 1 20vw;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -181,7 +182,7 @@
                 color: #ffffff;
             }
             .form {
-                flex: 2 1 60vh; /* flexible, min width 300px */
+                flex: 2 1 60vh;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -224,9 +225,6 @@
                 margin-bottom:10px;
             }
             @media (max-width: 800px) {
-                .more, .form {
-                    width: 100%;
-                }
                 .process-row {
                     flex-direction: column;
                     align-items: center;
@@ -240,8 +238,6 @@
                     padding-bottom: 0vh;
                     flex-direction: column;
                     align-items: center;
-                }
-                .form {
                     order: 1;
                     width: 100%;
                 }
